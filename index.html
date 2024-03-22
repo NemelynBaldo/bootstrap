@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Grid System</title>
+</head>
+<body>
+    <style>
+    [class*="col"]{
+        padding: 1rem;
+        border: 2px double rgb(176, 13, 13);
+        color: white, blanchedalmond;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: #BAF6FE;
+    }
+    .back{
+        background-color: rgb(160, 112, 101);
+        grid-column: 1/10;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .num1{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvj20jikT6LSL_-8ExrLEBEIsIsU5su6AdIEKwoX0wYw&s&fbclid=IwAR3Wk2q6G-4z36pMbZ9EwBdtMpsROx4FIJkbMgp9-N1cf5AquHAx5XQD2rY");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: hwb(197 91% 2%);
+        
+    }
+    .num2{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNt4MiItJMYdpFxYiAlDhTcFBsQogO4K6Yng&usqp=CAU&fbclid=IwAR163FuRNF-x6v8fcOXe0l5XPF9vW8IZee7_zCTwU4FVfQg1K4Zh5qD-KD4");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: rgb(56, 65, 74);
+        
+    }
+    .num3{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnkLKVf0aAhAyVgfZaOb9KyAf1KnPI--bDmZYyjj3r3JmW8p5z9uC_yIg&s=10&fbclid=IwAR3TIXUSyWemVn2P4nsm7BU7AlJenNdti_H-30l1WrXv37w3wd6PrQxidV8");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: azure;
+
+    }
+    .num4{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFlhZkWSLle0zdZNpYhHc1d_1JS2Y8eGfpZA&usqp=CAU&fbclid=IwAR0GwsImfN5TIZr8VbMUumI18kATi_0ljDBwhh9TDVKp0xug3i3fCgXJcvI");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: aliceblue;
+    }
+    .num5{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqndU4fx-o5Fv_FXVeUzxVQYbq8s4QRPGn8Q&usqp=CAU&fbclid=IwAR38d3-TLf46zYygXSOegvaRb3gxPHS-9OLUwYaxl-fvKTYAEj-JjS3zetg");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: beige;
+    }
+    .num6{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQUGtM_YyqQHI4wmu4ViiSBx0KlAvKmC-C8i0e645LgQ&s&fbclid=IwAR2vbRk9h2AvTajcpRWMTTMHG2s80pveGmy9v5o0VfXGorp0zqx_ZcmGYn8");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: bisque;
+    }
+    .num7{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQoI-K8FE5p3sFvg18tKavp3XIWAPKclWaF3Q&usqp=CAU&fbclid=IwAR3dCzQQwd4DJboXz7MenmAuEn7zwtLeFOlDbJjBl2RbrLb2MNGswZsOPZM");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: #fffffc;
+    }
+    .num8{
+       background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQFfdv-6YQYVH3g-IC0u73mED5G3Ie5rT5UA&usqp=CAU&fbclid=IwAR058wGIcv4OToJkcHzN_J9F2HE5LTBVO2aGIF7jlvPYOl_tTEObpT3Dw_g");
+       background-size: cover;
+       grid-column: 1/50;
+       length: 75px;
+       font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: #ffd6a5;
+    }
+    .num9{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYdtozku6kBb_ENCCsh0LP7u-4btyy4Hi4oiiuEqGzIQ&s&fbclid=IwAR2pevcPsisqTATBm8Omw82DHcc7f1wVMMyTg494u20D7JJupe498u0xWUU");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: aliceblue;
+    }
+    .num10{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrruupcLPyWn08nagZ-BvgFopHK9I6c61nHQ&usqp=CAU&fbclid=IwAR2GXxjUNRZugdczRpSBOkXMj5T7EUPKzjUXSkLy9jN8fg8S5A6-1g8BiqMQ");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: aliceblue;
+    }
+    .num11{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6BJ47tl4NVnfutXVZbPEVqWjkdMY_1KvrWmA--vTPaC1zgS8hFFSjB0PP&s=10&fbclid=IwAR3HDEvDPUJekHvN4ZDmVNuqWIuO0b0mOjukGNoe7FgtZYfQGROuBIRWiaw");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px; 
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: rgb(48, 53, 53);
+       
+    }
+    .num12{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNyqFATAWiKAXiovGU3LfCdna0DY9AtWLv1A&usqp=CAU&fbclid=IwAR26ErJ6G1fX61rtMKr9FTdlq2rxf2odt2fqT80PgNnmzOf08CqLCngSssQ");
+        background-size: cover;
+        grid-column: 1/50;
+        length: 75px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        font-style: italic;
+        color: azure;
+    }
+</style>
+
+<div class="container">
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-md-4 col-12 box num1">1</div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-md-4 col-12 box num2">2</div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-md-4 col-12 box num3">3</div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-md-6 col-12 box num4">4</div>
+          <div class="col-lg-6 col-md-6 col-sm-4 col-md-6 col-12 box num5">5</div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-md-12 col-12 box num6">6</div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+       <div class="col-lg-12 col-md-12 col-sm-12 col-12 box num7">7</div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+       <div class="col-lg-12 col-md-12 col-sm-12 col-12 box num8">8</div>
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+       <div class="col-lg-3 col-md-3 col-sm-3 col-3 box num9">9</div>
+       <div class="col-lg-3 col-md-3 col-sm-3 col-3 box num10">10</div>
+       <div class="col-lg-3 col-md-3 col-sm-3 col-3 box num11">11</div>
+       <div class="col-lg-3 col-md-3 col-sm-3 col-3 box num12">12</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
